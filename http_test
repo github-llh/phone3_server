@@ -1,0 +1,78 @@
+POST http://localhost:8000/api/v1/order/save/?userToken={"userId":1,"nickName":"十三","loginName":"13700002703","passwordMd5":"******","introduceSign":"我不怕千万人阻挡，只怕自己投降","isDeleted":0,"lockedFlag":0}
+Content-Type: application/x-www-form-urlencoded
+
+cartItemIds=4,5,6&addressId=1
+
+###
+POST http://localhost:8000/api/v1/manage/order/modify/?adminUserToken={"adminUserId":1,"loginUserName":"admin","nickName":"十三","locked":0}
+Content-Type: application/x-www-form-urlencoded
+
+totalPrice=590&orderId=1
+
+###
+POST http://localhost:8000/api/v1/manage/order/info/1/?adminUserToken={"adminUserId":1,"loginUserName":"admin","nickName":"十三","locked":0}
+Content-Type: application/x-www-form-urlencoded
+
+###
+GET http://localhost:8000/api/v1/manage/user/list/?adminUserToken={"adminUserId":1,"loginUserName":"admin","nickName":"十三","locked":0}
+Content-Type: application/x-www-form-urlencoded
+
+POST http://127.0.0.1:8000/api/v1/user/login/
+Accept: application/json
+
+{"loginName":"13700002703","passwordMd5":"e10adc3949ba59abbe56e057f20f883e"}
+
+###
+POST http://127.0.0.1:8000/api/v1/user/login/
+Content-Type: application/x-www-form-urlencoded
+
+loginName=13700002703&passwordMd5=e10adc3949ba59abbe56e057f20f883e
+
+###
+POST http://127.0.0.1:8000/api/v1/user/register/
+Content-Type: application/json
+
+{"loginName": "15074908825","password": "123"}
+
+###
+POST http://127.0.0.1:8000/api/v1/user/modify/
+Accept: application/json
+token: 4319ef4c1df7c2c797b96d170b80056f
+
+{"nickName":"执著","passwordMd5":"","introduceSign":"随便说点什么"}
+
+###
+GET http://127.0.0.1:8000/api/v1/user/info/
+Accept: application/json
+token:4319ef4c1df7c2c797b96d170b80056f
+
+###
+POST http://127.0.0.1:8000/api/v1/user/logout/
+Content-Type: application/json
+token:9f5feb4054797d543b54e59de3b1ca8a
+
+###
+GET http://127.0.0.1:8000/api/v1/goods/search/?keyword=小米
+Content-Type: application/x-www-form-urlencoded
+token: b6fd2354bde276169597424a2f28e8f1
+
+###
+
+POST http://127.0.0.1:8000/api/v1/goods/search/
+Content-Type: application/x-www-form-urlencoded
+token: b6fd2354bde276169597424a2f28e8f1
+
+keyword=小米&categoryId=51
+
+
+###
+POST http://127.0.0.1:8000/api/v1/goods/search/
+Content-Type: application/json
+token: b6fd2354bde276169597424a2f28e8f1
+
+{
+  "keyword":"小米","categoryId":51
+}
+
+
+
