@@ -15,22 +15,22 @@ api：应用，也可叫实例\
 ==》modes.py：Model层，实体类，每张表对应一个类\
 ==》services.py：业务层，具体需求要实现的业务逻辑处理\
 ==》urls.py：二级动态路由，统一管理\
-==》views.py：View层，通过前端返回给后端的数据\
+==》views.py：View层，通过前端返回给后端的数据
 
 logs：日志记录\
 phone：项目的主目录*\
 ==》settings.py：主要配置文件，设置应用、中间件、数据库、时区、资源代理等等...\
-==》urls.py：一级动态路由，主要区分多个应用的场景\
+==》urls.py：一级动态路由，主要区分多个应用的场景
 
 statics：存放静态资源\
 ==》goods-img：一些商品图片\
 ==》icon:头像图标\
-==》数据库sql文件\
+==》数据库sql文件
 
 templates：存放模板代码\
 utils：一些工具类\
 ==》app_decorators.py：项目的装饰器，也可叫全局过滤器，解析token，验证token，权限管理\
-==》commons.py：一些细小的功能点，给封装起来了\
+==》commons.py：一些细小的功能点，给封装起来了
 
 venv：生成环境\
 http_test：一些测试的api接口
