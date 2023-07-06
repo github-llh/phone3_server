@@ -4,6 +4,8 @@
 
 根据 GitHub 上的 [newbee-mall](https://github.com/newbee-ltd/newbee-mall) 项目，这是一套商城后台管理系统，由于是基于 Spring Boot 及相关技术栈开发，本人以自学 Python 的家底来改造项目，把 Java 转成 Python 项目。包含数据面板、轮播图管理、商品管理、订单管理、会员管理、分类管理、设置等模块。 
 
+- 线上预览地址： [http://mall.newbee.ltd](http://mall.newbee.ltd/?from=github) ，账号可自行注册
+
 #### 2、系统架构
 
 基于 [Django](http://www.djangoproject.com/) 框架开发...细节太多了
